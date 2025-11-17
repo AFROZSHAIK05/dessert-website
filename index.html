@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dessert Heaven</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+    }
+    header {
+      background: #d63384;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 15px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    .card img {
+      width: 180px;
+      height: 120px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    button {
+      background: #d63384;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #b02a6d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    🍩 Welcome to Dessert Heaven
+  </header>
+
+  <div class="container">
+    <h2>Popular Desserts</h2>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/featured/?chocolate-cake" alt="Chocolate Cake">
+      <div>
+        <h3>Chocolate Cake</h3>
+        <p>₹249 - Rich & moist chocolate cake slice.</p>
+        <button onclick="order('Chocolate Cake')">Order Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/featured/?doughnut" alt="Doughnut">
+      <div>
+        <h3>Glazed Doughnut</h3>
+        <p>₹99 - Sweet & soft doughnut with sugar glaze.</p>
+        <button onclick="order('Glazed Doughnut')">Order Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/featured/?ice-cream" alt="Ice Cream">
+      <div>
+        <h3>Vanilla Ice Cream</h3>
+        <p>₹129 - Classic vanilla scoop topped with nuts.</p>
+        <button onclick="order('Vanilla Ice Cream')">Order Now</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function order(item) {
+      alert(`🍨 Thank you for ordering ${item}!\nYour dessert will be delivered soon! 🚚`);
+    }
+  </script>
+
+</body>
+</html>
